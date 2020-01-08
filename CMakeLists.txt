@@ -112,6 +112,8 @@ find_package(Boost 1.67 REQUIRED COMPONENTS
     iostreams)
 
 add_definitions(-DBOOST_ASIO_DISABLE_STD_EXPERIMENTAL_STRING_VIEW)
+add_definitions("-Wall -g")
+
 
 set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
 set(THREADS_PREFER_PTHREAD_FLAG TRUE)
